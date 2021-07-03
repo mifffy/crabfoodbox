@@ -5,11 +5,18 @@ var somethingElseArrays= ["Dintai noodle, extra extra garlic and chili oil!", "P
 var userName;
 
 userName = prompt("What should The Crabs call you");
+ 
 
-
-var intro =
 alert("Welcome to The Crab Food Box, " + userName + "!!");
-confirm("The Crabs wants to fetch some food for you! Are you ready, " + userName + "?");
+var intro = confirm("The Crabs wants to fetch some food for you! Are you ready, " + userName + "?");
+if (intro){
+    (intro === true);
+}
+else {
+    document.textContent("Then what are you even doing here?")
+}
+
+
 
 
 var wantFood = 
@@ -25,4 +32,18 @@ else
 }
 
 
+
+
+
+var wantFood = 
+confirm("Are you feeling super adventurous today?");
+
+if (wantFood){
+    var wantSomethingElse = 
+    alert(somethingElseArrays[Math.floor(Math.random() * somethingElseArrays.length)]);
+}
+else
+{
+    alert(riceArrays[Math.floor(Math.random() * riceArrays.length)]);
+}
 
